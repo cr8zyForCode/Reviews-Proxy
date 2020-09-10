@@ -22,38 +22,38 @@ app.get("/reviews/users", (req, res) => {
     });
 });
 
-app.get("/reviews/houses", (req, res) => {
-  axios
-    .get("http://13.52.214.87:3003/reviews/houses")
-    .then((data) => {
-      res.status(200).send(data.data);
-    })
-    .catch(() => {
-      res.status(404);
-    });
-});
+// app.get("/reviews/houses", (req, res) => {
+//   axios
+//     .get("http://13.52.214.87:3003/reviews/houses")
+//     .then((data) => {
+//       res.status(200).send(data.data);
+//     })
+//     .catch(() => {
+//       res.status(404);
+//     });
+// });
 
-app.get("/reviews", (req, res) => {
-  axios
-    .get("http://13.52.214.87:3003/reviews")
-    .then((data) => {
-      res.status(200).send(data.data);
-    })
-    .catch(() => {
-      res.status(404);
-    });
-});
+// app.get("/reviews", (req, res) => {
+//   axios
+//     .get("http://13.52.214.87:3003/reviews")
+//     .then((data) => {
+//       res.status(200).send(data.data);
+//     })
+//     .catch(() => {
+//       res.status(404);
+//     });
+// });
 
-app.get("/reviews/comments", (req, res) => {
-  axios
-    .get("http://13.52.214.87:3003/reviews/comments")
-    .then((data) => {
-      res.status(200).send(data.data);
-    })
-    .catch(() => {
-      res.status(404);
-    });
-});
+// app.get("/reviews/comments", (req, res) => {
+//   axios
+//     .get("http://13.52.214.87:3003/reviews/comments")
+//     .then((data) => {
+//       res.status(200).send(data.data);
+//     })
+//     .catch(() => {
+//       res.status(404);
+//     });
+// });
 
 // gallery server
 
@@ -105,13 +105,13 @@ app.post("/rooms/:room_id/reservation", (req, res) => {
 
 // image carousel server
 
-app.get("/suggestedListings", (req, res) => {
-  axios
-    .get("http://52.32.67.233:3004/suggestedListings")
-    .then((response) => {
-      res.send(response.data);
-    })
-    .catch((err) => {
-      res.status(400).send(err);
-    });
-});
+// app.get("/suggestedListings", (req, res) => {
+//   axios
+//     .get("http://52.32.67.233:3004/suggestedListings")
+//     .then((response) => {
+//       res.send(response.data);
+//     })
+//     .catch((err) => {
+//       res.status(400).send(err);
+//     });
+// });
